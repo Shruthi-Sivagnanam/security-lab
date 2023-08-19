@@ -39,7 +39,7 @@ class PlayFairEncrpt {
         int m1 = 0, n1 = 0, m2 = 0, n2 = 0;
         if (plainText.length() % 2 != 0)
             plainText += "x";
-        System.out.println(plainText);
+        // System.out.println(plainText);
         for (int i = 0; i < plainText.length(); i++) {
             char p1 = plainText.charAt(i);
             char p2 = plainText.charAt(i + 1);
@@ -54,7 +54,6 @@ class PlayFairEncrpt {
                     }
                 }
             }
-            System.out.println(m1 + " " + n1 + " " + m2 + " " + n2);
             // same row
             if (m1 == m2) {
                 if (n1 > n2)
@@ -89,11 +88,14 @@ class PlayFairEncrpt {
 
         matrixFormation(key);
 
+        System.out.println("Matrix formed with the keyword: ");
+
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++)
                 System.out.print(matrix[i][j]);
             System.out.println();
         }
+        System.out.println("Cipher Text: ");
 
         encryption(plainText);
 

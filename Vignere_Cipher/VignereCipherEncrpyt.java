@@ -16,12 +16,6 @@ class VignereCipherEncrpyt {
                 index++;
             }
         }
-        for (int i = 0; i < 26; i++) {
-            for (int j = 0; j < 26; j++) {
-                System.out.print(alphabetMatrix[i][j]);
-            }
-            System.out.println();
-        }
     }
 
     public static void main(String[] args) {
