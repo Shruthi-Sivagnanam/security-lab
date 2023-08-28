@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <title>RSA Algorithm</title>
+  </head>
+  <body>
+    <h1>RSA Algorithm</h1>
+    <div>
+      <h6>Public Key</h6>
+      <input type="button" value="Generate Public Key" onclick="publicKey()" />
+      <p id="public"></p>
+    </div>
+    <div>
+      <h2>Encryption</h2>
+      <form>
+        <input
+          type="text"
+          placeholder="Enter the plain text: "
+          name="plainText"
+        />
+        <input type="button" value="Encrypt" onclick="encryption()" />
+      </form>
+      <h6 id="encrypt"></h6>
+    </div>
+    <div>
+      <h2>Decryption</h2>
+      <form action="">
+        <input
+          type="text"
+          placeholder="Enter the cipher text: "
+          name="cipherText"
+        />
+        <input type="button" value="Decrypt" onclick="decryption()" />
+      </form>
+      <h6 id="decrypt"></h6>
+    </div>
+  </body>
+</html>
